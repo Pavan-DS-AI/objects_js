@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //31. Given an array of objects representing students, use the map method to create a new array of objects where each object has an additional property isAdult that is true if the student's age is 18 or above, and false otherwise.
+
+            var students = [
+                            { name: 'John', age: 17 },
+                            { name: 'Jane', age: 19 },
+                            { name: 'Jack', age: 18 },
+                            ];
+            var new_arr=students.map((stu)=> {
+            return {...stu,isAdult:stu.age>=18}
+            });
+            for (let i of new_arr){
+                for (let j in i){
+                    document.write(j+":"+i[j]+"<br>")
+                }
+            }
+        </script>
+    </body>
+</html>

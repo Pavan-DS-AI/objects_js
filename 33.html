@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+//33.  Given an array of employee objects, each with name and salary properties, print the names of employees in ascending order who earn more than a specified amount given by the user.
+
+const employees = [
+  { name: 'Alice', salary: 50000 },
+  { name: 'Bob', salary: 60000 },
+  { name: 'Charlie', salary: 40000 },
+];
+
+var user=prompt('enter the salary amount')
+var employ_name=employees.filter((sal)=>{
+    return sal.salary>user
+})
+for (let i in employ_name)
+document.write(employ_name[i].name+"<br>")
+        </script>
+    </body>
+</html>
