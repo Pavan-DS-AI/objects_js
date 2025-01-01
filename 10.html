@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //10. write a javascript program to check given string is palindrome or not
+            var user=prompt('enter a string')
+            var len=user.length-1
+            var c=0
+            for(let i=0;i<=user.length-1;i++){
+                if (user[i]!=user[len-i]){
+                    c=1
+                    document.write('string is not a palindrome')
+                    break
+                }
+            }
+            if (c!=1){
+                document.write('string is palindrome')
+            }
+            
+           
+        </script>
+    </body>
+</html>

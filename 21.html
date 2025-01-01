@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice</title>
+    </head>
+    <body>
+        <script>
+            
+            //21. Write a JavaScript program to print N digits in fibonacci series 
+            var n = prompt('Enter the number of terms in Fibonacci series:');
+            var a = 0, b = 1;
+            for (var i = 0; i < n; i++) {
+                document.write(a + " ");
+                var next = a + b;
+                a = b;
+                b = next;
+            }
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice</title>
+    </head>
+    <body>
+        <script>
+            
+            function isArmstrong(num) {
+            var sum = 0;
+            var originalNum = num;
+            var numDigits = num.toString().length;
+
+            while (num > 0) {
+                var digit = num % 10;
+                sum += Math.pow(digit, numDigits);
+                num = Math.floor(num / 10);
+            }
+
+            return sum === originalNum;
+        }
+
+        var number = prompt('Enter a number:');
+        if (isArmstrong(Number(number))) {
+            document.write(number + " is an Armstrong number.");
+        } else {
+            document.write(number + " is not an Armstrong number.");
+        }
+
+        </script>
+    </body>
+
+</html>

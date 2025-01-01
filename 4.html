@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice</title>
+    </head>
+    <body>
+        <script>
+        //4. Write a JavaScript program to count number of duplicates elements of an array
+
+        var arr=[1,1,2,3,4,4,5,4]
+            var duplicates={}
+        arr.forEach((item)=>{
+            duplicates[item]=(duplicates[item] || 0)+1
+        })
+        for(let k in duplicates){
+            if(duplicates[k]>1){
+                document.write(`${k} : ${duplicates[k]}<br>`)
+            }
+        }
+        //document.write(JSON.stringify(duplicates))
+
+        // var dict=new Object();
+        // for(let i of arr){
+        //     if (i in dict){
+        //         dict[i]+=1
+        //     }
+        //     else
+        //     dict[i]=1
+        // }
+        // var duplicates=dict.filter((ele)=>dict[ele]>1)
+        // document.write(duplicates)
+        // document.write(JSON.stringify(dict))
+        // // var arr1=[]
+        // var c=0
+        // for (let i of arr){
+        //     set1.add(i)
+        // }
+        // var len=set1.size
+        // document.write(arr.length-len)
+               
+        </script>
+    </body>
+
+</html>

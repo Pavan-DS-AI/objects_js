@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          // 9. write a javascript program to check given number is palindrome number or not
+          var user_input=parseInt(prompt('enter your number'))
+          var temp=user_input
+          var val=0
+          //1234
+          while (user_input>0){
+            rem=user_input%10
+            val=val*10+rem
+            user_input=parseInt(user_input/10)
+          }
+          if (temp==val){
+            document.write(`the given number is palindrome`)
+          }
+          else{
+            document.write(`the given number is not a palindrome`)
+          }
+        </script>
+    </body>
+</html>

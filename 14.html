@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <script>
+            //15. write a javascript program to check given number is strong number or not
+
+            function fact(n) {
+                if (n === 0 || n === 1) 
+                    return 1;
+                return n * fact(n - 1);
+            }
+
+            var number = prompt('Enter a number:');
+            var dup = number;
+            var sum = 0;
+
+            while (number > 0) {
+                var temp = number % 10;
+                sum += fact(temp);
+                number = Math.floor(number / 10);
+            }
+
+            document.write("Sum of factorial of digits: " + sum + "<br>");
+            if (parseInt(dup) === sum) {
+                document.write(dup + " is a Strong Number");
+            } else {
+                document.write(dup + " is NOT a Strong Number");
+            }
+        </script>
+    </body>
+</html>

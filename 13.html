@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice</title>
+    </head>
+    <body>
+        <script>
+            //13.  write a javascript program to print prime numbers between 1 to 100
+
+            var arr=[]
+            var n=parseInt(prompt('enter a number'))
+            for(let i=1;i<=n;i++){
+                arr.push(true)
+            }
+            for(i=2;i<=Math.sqrt(n);i++){
+                if (arr[i]){
+                    for(j=i**2;j<=n;j+=i){
+                        arr[j]=false
+                    }
+                }
+            }
+            for(i=2;i<n;i++){
+                if (arr[i])
+                document.write(i+" ")
+            }
+        </script>
+    </body>
+
+</html>

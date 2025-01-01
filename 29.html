@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            let num=parseInt(prompt('enter the number'))
+
+            let val=new Promise((res,rej)=>{
+                if (num%2!=0)
+                res('the number is odd')
+                else{
+                rej('the number is even')
+                }
+            })
+
+            val.then((msg)=>{document.write(msg)})
+               .catch((err)=>document.write(err))
+               .finally(()=>document.write("<br>thank you"))
+
+        </script>
+    </body>
+</html>
